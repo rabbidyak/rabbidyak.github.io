@@ -1,3 +1,6 @@
 title: App Support
-description: Support and privacy for iOS apps
+description: Support and privacy for Pill Pals, Insulin for a Match, and Walrus the Cost?
 theme: jekyll-theme-cayman
+url: "https://rabbidyak.github.io"
+baseurl: ""
+show_downloads: false

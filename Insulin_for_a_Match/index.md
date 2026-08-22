@@ -3,6 +3,8 @@ layout: default
 title: Insulin for a Match Support
 ---
 
+{% include app-links.html %}
+
 # Insulin for a Match
 
 Insulin for a Match is an iOS matching game that helps you practice insulin brand names and their generic counterparts. Cards are dealt in two columns. You match a brand to a generic, and you can filter by fast, slow, or mixed action.

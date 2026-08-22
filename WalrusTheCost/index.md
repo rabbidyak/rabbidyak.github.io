@@ -3,6 +3,8 @@ layout: default
 title: Walrus the Cost? Support
 ---
 
+{% include app-links.html %}
+
 # Walrus the Cost?
 
 Walrus the Cost? is an iOS fitness-cost tracker. It logs ride and row workouts, equipment and subscription expenses, and a cost-per-usage dashboard so you can see what each session costs.

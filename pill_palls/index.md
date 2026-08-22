@@ -3,6 +3,8 @@ layout: default
 title: Pill Pals Support
 ---
 
+{% include app-links.html %}
+
 # Pill Pals
 
 Pill Pals is an iOS study app for common U.S. outpatient medications. It uses flashcards, search, and a Name that Pill quiz so you can practice brand and generic names.
