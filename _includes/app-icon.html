@@ -1,0 +1,4 @@
+{% include app-brand.html %}
+{% if brand_icon %}
+<img class="brand-icon brand-icon--inline" src="{{ brand_icon | relative_url }}" width="128" height="128" alt="{{ brand_alt }}">
+{% endif %}

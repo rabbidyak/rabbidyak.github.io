@@ -1,1 +1,5 @@
-{% comment %}Reserved for extra head tags. Cayman includes this from the layout.{% endcomment %}
+{% include app-brand.html %}
+<meta name="theme-color" content="{{ theme_color }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ brand_icon_32 | relative_url }}">
+<link rel="apple-touch-icon" href="{{ brand_icon_180 | relative_url }}">
+<script>document.documentElement.classList.add("app-{{ page.app | default: 'hub' }}");</script>

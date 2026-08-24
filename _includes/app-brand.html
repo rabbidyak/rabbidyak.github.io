@@ -1,0 +1,26 @@
+{% case page.app %}
+  {% when "pill-pals" %}
+    {% assign theme_color = "#0E335C" %}
+    {% assign brand_icon = "/assets/icons/pill-pals.png" %}
+    {% assign brand_icon_32 = "/assets/icons/pill-pals-32.png" %}
+    {% assign brand_icon_180 = "/assets/icons/pill-pals-180.png" %}
+    {% assign brand_alt = "Pill Pals" %}
+  {% when "insulin" %}
+    {% assign theme_color = "#0048BE" %}
+    {% assign brand_icon = "/assets/icons/insulin.png" %}
+    {% assign brand_icon_32 = "/assets/icons/insulin-32.png" %}
+    {% assign brand_icon_180 = "/assets/icons/insulin-180.png" %}
+    {% assign brand_alt = "Insulin for a Match" %}
+  {% when "walrus" %}
+    {% assign theme_color = "#1484D6" %}
+    {% assign brand_icon = "/assets/icons/walrus.png" %}
+    {% assign brand_icon_32 = "/assets/icons/walrus-32.png" %}
+    {% assign brand_icon_180 = "/assets/icons/walrus-180.png" %}
+    {% assign brand_alt = "Walrus the Cost?" %}
+  {% else %}
+    {% assign theme_color = "#0E335C" %}
+    {% assign brand_icon = nil %}
+    {% assign brand_icon_32 = "/assets/icons/pill-pals-32.png" %}
+    {% assign brand_icon_180 = "/assets/icons/pill-pals-180.png" %}
+    {% assign brand_alt = "App Support" %}
+{% endcase %}

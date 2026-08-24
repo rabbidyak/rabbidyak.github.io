@@ -19,7 +19,7 @@
   --table-head: rgba(14, 51, 92, 0.08);
 }
 
-body.app-pill-pals {
+.app-pill-pals {
   --header-from: #0e335c;
   --header-to: #0a4ea3;
   --header-fg: #f1ece6;
@@ -35,7 +35,7 @@ body.app-pill-pals {
   --table-head: rgba(14, 51, 92, 0.45);
 }
 
-body.app-insulin {
+.app-insulin {
   --header-from: #0048be;
   --header-to: #0090f0;
   --header-fg: #ffffff;
@@ -51,7 +51,7 @@ body.app-insulin {
   --table-head: rgba(248, 72, 144, 0.12);
 }
 
-body.app-walrus {
+.app-walrus {
   --header-from: #4a7a9c;
   --header-to: #1484d6;
   --header-fg: #f6e6d4;
@@ -86,15 +86,28 @@ a:hover {
   background-image: linear-gradient(120deg, var(--header-from), var(--header-to));
 }
 
-body.app-insulin .page-header {
+.app-insulin .page-header {
   background-image:
     repeating-conic-gradient(from 0deg at 50% 30%, rgba(255, 255, 255, 0.12) 0deg 10deg, transparent 10deg 20deg),
     linear-gradient(180deg, #0090f0, #0048be);
 }
 
+html.app-insulin body,
 body.app-insulin {
   background-image:
     repeating-conic-gradient(from 0deg at 50% -10%, rgba(0, 144, 240, 0.55) 0deg 12deg, rgba(0, 72, 190, 0.95) 12deg 24deg);
+}
+
+.app-pill-pals .project-name {
+  color: #fbc725;
+}
+
+.app-insulin .project-name {
+  color: #ffffff;
+}
+
+.app-walrus .project-name {
+  color: #f6e6d4;
 }
 
 .page-header a {
@@ -103,11 +116,32 @@ body.app-insulin {
 
 .brand-icon {
   display: block;
-  width: 96px;
-  height: 96px;
+  width: 128px;
+  height: 128px;
   margin: 0 auto 1.1rem;
   border-radius: 22%;
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.28);
+}
+
+.app-pill-pals .brand-icon {
+  box-shadow: 0 0 0 3px #fbc725, 0 10px 28px rgba(0, 0, 0, 0.28);
+}
+
+.app-insulin .brand-icon {
+  box-shadow: 0 0 0 3px #f84890, 0 10px 28px rgba(0, 0, 0, 0.28);
+}
+
+.app-walrus .brand-icon {
+  box-shadow: 0 0 0 3px #f6e6d4, 0 10px 28px rgba(0, 0, 0, 0.28);
+}
+
+.brand-icon--inline {
+  display: block;
+  margin: 0 auto 1.5rem;
+}
+
+.has-header-icon .brand-icon--inline {
+  display: none;
 }
 
 .hub-icons {
@@ -220,9 +254,9 @@ body.app-insulin {
   background-color: var(--border);
 }
 
-body.app-pill-pals .main-content,
-body.app-insulin .main-content,
-body.app-walrus .main-content {
+.app-pill-pals .main-content,
+.app-insulin .main-content,
+.app-walrus .main-content {
   margin: 1.5rem auto 2.5rem;
   border-radius: 1.25rem;
   background-color: var(--surface);
@@ -230,17 +264,17 @@ body.app-walrus .main-content {
 }
 
 @media screen and (min-width: 64em) {
-  body.app-pill-pals .main-content,
-  body.app-insulin .main-content,
-  body.app-walrus .main-content {
+  .app-pill-pals .main-content,
+  .app-insulin .main-content,
+  .app-walrus .main-content {
     margin: 2rem auto 3rem;
   }
 }
 
 @media screen and (max-width: 42em) {
-  body.app-pill-pals .main-content,
-  body.app-insulin .main-content,
-  body.app-walrus .main-content {
+  .app-pill-pals .main-content,
+  .app-insulin .main-content,
+  .app-walrus .main-content {
     margin: 0.85rem 0.75rem 1.5rem;
     border-radius: 1rem;
   }

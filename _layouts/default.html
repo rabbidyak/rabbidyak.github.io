@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="{{ site.lang | default: "en-US" }}" class="app-{{ page.app | default: 'hub' }}">
   <head>
     <meta charset="UTF-8">
 
@@ -7,41 +7,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    {% case page.app %}
-      {% when "pill-pals" %}
-        {% assign theme_color = "#0E335C" %}
-        {% assign brand_icon = "/assets/icons/pill-pals.png" %}
-        {% assign brand_icon_32 = "/assets/icons/pill-pals-32.png" %}
-        {% assign brand_icon_180 = "/assets/icons/pill-pals-180.png" %}
-      {% when "insulin" %}
-        {% assign theme_color = "#0048BE" %}
-        {% assign brand_icon = "/assets/icons/insulin.png" %}
-        {% assign brand_icon_32 = "/assets/icons/insulin-32.png" %}
-        {% assign brand_icon_180 = "/assets/icons/insulin-180.png" %}
-      {% when "walrus" %}
-        {% assign theme_color = "#1484D6" %}
-        {% assign brand_icon = "/assets/icons/walrus.png" %}
-        {% assign brand_icon_32 = "/assets/icons/walrus-32.png" %}
-        {% assign brand_icon_180 = "/assets/icons/walrus-180.png" %}
-      {% else %}
-        {% assign theme_color = "#0E335C" %}
-        {% assign brand_icon = nil %}
-        {% assign brand_icon_32 = "/assets/icons/pill-pals-32.png" %}
-        {% assign brand_icon_180 = "/assets/icons/pill-pals-180.png" %}
-    {% endcase %}
-    <meta name="theme-color" content="{{ theme_color }}">
+    {% include app-brand.html %}
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ brand_icon_32 | relative_url }}">
-    <link rel="apple-touch-icon" href="{{ brand_icon_180 | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     {% include head-custom.html %}
   </head>
-  <body class="app-{{ page.app | default: 'hub' }}">
+  <body class="app-{{ page.app | default: 'hub' }}{% if brand_icon %} has-header-icon{% endif %}">
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
     <header class="page-header" role="banner">
       {% if brand_icon %}
-        <img class="brand-icon" src="{{ brand_icon | relative_url }}" width="96" height="96" alt="">
+        <img class="brand-icon" src="{{ brand_icon | relative_url }}" width="128" height="128" alt="{{ brand_alt }}">
       {% else %}
         <div class="hub-icons" aria-hidden="true">
           <img src="{{ '/assets/icons/pill-pals.png' | relative_url }}" width="64" height="64" alt="">

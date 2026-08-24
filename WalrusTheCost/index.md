@@ -5,6 +5,8 @@ app: walrus
 description: Support and privacy for the Walrus the Cost? iOS tracker
 ---
 
+{% include app-icon.html %}
+
 Walrus the Cost? is an iOS fitness-cost tracker. It logs ride and row workouts, equipment and subscription expenses, and a cost-per-usage dashboard so you can see what each session costs.
 
 This page is the support and privacy page for the App Store listing.
