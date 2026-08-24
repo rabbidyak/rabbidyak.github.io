@@ -11,18 +11,28 @@
       {% when "pill-pals" %}
         {% assign theme_color = "#0E335C" %}
         {% assign brand_icon = "/assets/icons/pill-pals.png" %}
+        {% assign brand_icon_32 = "/assets/icons/pill-pals-32.png" %}
+        {% assign brand_icon_180 = "/assets/icons/pill-pals-180.png" %}
       {% when "insulin" %}
         {% assign theme_color = "#0048BE" %}
         {% assign brand_icon = "/assets/icons/insulin.png" %}
+        {% assign brand_icon_32 = "/assets/icons/insulin-32.png" %}
+        {% assign brand_icon_180 = "/assets/icons/insulin-180.png" %}
       {% when "walrus" %}
         {% assign theme_color = "#1484D6" %}
         {% assign brand_icon = "/assets/icons/walrus.png" %}
+        {% assign brand_icon_32 = "/assets/icons/walrus-32.png" %}
+        {% assign brand_icon_180 = "/assets/icons/walrus-180.png" %}
       {% else %}
         {% assign theme_color = "#0E335C" %}
         {% assign brand_icon = nil %}
+        {% assign brand_icon_32 = "/assets/icons/pill-pals-32.png" %}
+        {% assign brand_icon_180 = "/assets/icons/pill-pals-180.png" %}
     {% endcase %}
     <meta name="theme-color" content="{{ theme_color }}">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ brand_icon_32 | relative_url }}">
+    <link rel="apple-touch-icon" href="{{ brand_icon_180 | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     {% include head-custom.html %}
   </head>
@@ -32,6 +42,12 @@
     <header class="page-header" role="banner">
       {% if brand_icon %}
         <img class="brand-icon" src="{{ brand_icon | relative_url }}" width="96" height="96" alt="">
+      {% else %}
+        <div class="hub-icons" aria-hidden="true">
+          <img src="{{ '/assets/icons/pill-pals.png' | relative_url }}" width="64" height="64" alt="">
+          <img src="{{ '/assets/icons/insulin.png' | relative_url }}" width="64" height="64" alt="">
+          <img src="{{ '/assets/icons/walrus.png' | relative_url }}" width="64" height="64" alt="">
+        </div>
       {% endif %}
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       <p class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</p>

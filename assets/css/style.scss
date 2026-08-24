@@ -39,12 +39,12 @@ body.app-insulin {
   --header-from: #0048be;
   --header-to: #0090f0;
   --header-fg: #ffffff;
-  --page-bg: #f8f0e0;
+  --page-bg: #0048be;
   --text: #080040;
   --heading: #f84890;
   --link: #f84890;
   --link-hover: #743dae;
-  --surface: #ffffff;
+  --surface: #f8f0e0;
   --border: rgba(8, 0, 64, 0.12);
   --nav-current-bg: #f84890;
   --nav-current-fg: #ffffff;
@@ -86,6 +86,17 @@ a:hover {
   background-image: linear-gradient(120deg, var(--header-from), var(--header-to));
 }
 
+body.app-insulin .page-header {
+  background-image:
+    repeating-conic-gradient(from 0deg at 50% 30%, rgba(255, 255, 255, 0.12) 0deg 10deg, transparent 10deg 20deg),
+    linear-gradient(180deg, #0090f0, #0048be);
+}
+
+body.app-insulin {
+  background-image:
+    repeating-conic-gradient(from 0deg at 50% -10%, rgba(0, 144, 240, 0.55) 0deg 12deg, rgba(0, 72, 190, 0.95) 12deg 24deg);
+}
+
 .page-header a {
   color: inherit;
 }
@@ -97,6 +108,20 @@ a:hover {
   margin: 0 auto 1.1rem;
   border-radius: 22%;
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.28);
+}
+
+.hub-icons {
+  display: flex;
+  justify-content: center;
+  gap: 0.7rem;
+  margin: 0 auto 1.15rem;
+}
+
+.hub-icons img {
+  width: 64px;
+  height: 64px;
+  border-radius: 22%;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.24);
 }
 
 .project-tagline {
@@ -285,6 +310,10 @@ body.app-walrus .main-content {
   --card-body-fg: #f1ece6;
 }
 
+.app-card--pill-pals h2 {
+  color: #fbc725 !important;
+}
+
 .app-card--insulin {
   --card-hero: linear-gradient(120deg, #0048be, #0090f0);
   --card-hero-fg: #ffffff;
@@ -294,6 +323,13 @@ body.app-walrus .main-content {
 
 .app-card--insulin .app-card__hero {
   border-bottom: 4px solid #f84890;
+  background-image:
+    repeating-conic-gradient(from 0deg at 50% 50%, rgba(255, 255, 255, 0.14) 0deg 12deg, transparent 12deg 24deg),
+    linear-gradient(120deg, #0048be, #0090f0);
+}
+
+.app-card--insulin h2 {
+  color: #f84890 !important;
 }
 
 .app-card--walrus {
