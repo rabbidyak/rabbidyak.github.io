@@ -4,3 +4,5 @@ theme: jekyll-theme-cayman
 url: "https://rabbidyak.github.io"
 baseurl: ""
 show_downloads: false
+plugins:
+  - jekyll-seo-tag

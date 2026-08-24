@@ -1,0 +1,308 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+:root {
+  --header-from: #0e335c;
+  --header-to: #4a7a9c;
+  --header-fg: #f1ece6;
+  --page-bg: #f4efe8;
+  --text: #3d4450;
+  --heading: #0e335c;
+  --link: #1484d6;
+  --link-hover: #0a4ea3;
+  --surface: #ffffff;
+  --border: #dce6f0;
+  --nav-current-bg: #ffffff;
+  --nav-current-fg: #0e335c;
+  --table-head: rgba(14, 51, 92, 0.08);
+}
+
+body.app-pill-pals {
+  --header-from: #0e335c;
+  --header-to: #0a4ea3;
+  --header-fg: #f1ece6;
+  --page-bg: #0e335c;
+  --text: #f1ece6;
+  --heading: #fbc725;
+  --link: #fbc725;
+  --link-hover: #3786d5;
+  --surface: #1c4f85;
+  --border: rgba(241, 236, 230, 0.2);
+  --nav-current-bg: #fbc725;
+  --nav-current-fg: #0e335c;
+  --table-head: rgba(14, 51, 92, 0.45);
+}
+
+body.app-insulin {
+  --header-from: #0048be;
+  --header-to: #0090f0;
+  --header-fg: #ffffff;
+  --page-bg: #f8f0e0;
+  --text: #080040;
+  --heading: #f84890;
+  --link: #f84890;
+  --link-hover: #743dae;
+  --surface: #ffffff;
+  --border: rgba(8, 0, 64, 0.12);
+  --nav-current-bg: #f84890;
+  --nav-current-fg: #ffffff;
+  --table-head: rgba(248, 72, 144, 0.12);
+}
+
+body.app-walrus {
+  --header-from: #4a7a9c;
+  --header-to: #1484d6;
+  --header-fg: #f6e6d4;
+  --page-bg: #b5d4f0;
+  --text: #20160c;
+  --heading: #8e5a32;
+  --link: #1484d6;
+  --link-hover: #4a7a9c;
+  --surface: #f6e6d4;
+  --border: rgba(142, 90, 50, 0.22);
+  --nav-current-bg: #f6e6d4;
+  --nav-current-fg: #8e5a32;
+  --table-head: rgba(180, 123, 77, 0.22);
+}
+
+body {
+  background-color: var(--page-bg);
+  color: var(--text);
+}
+
+a {
+  color: var(--link);
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+.page-header {
+  color: var(--header-fg);
+  background-color: var(--header-to);
+  background-image: linear-gradient(120deg, var(--header-from), var(--header-to));
+}
+
+.page-header a {
+  color: inherit;
+}
+
+.brand-icon {
+  display: block;
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 1.1rem;
+  border-radius: 22%;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.28);
+}
+
+.project-tagline {
+  margin-bottom: 1.4rem;
+}
+
+.app-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.55rem;
+}
+
+.app-nav .btn {
+  margin: 0;
+  color: var(--header-fg);
+  background-color: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.28);
+}
+
+.app-nav .btn + .btn {
+  margin-left: 0;
+}
+
+.app-nav .btn:hover {
+  color: var(--header-fg);
+  background-color: rgba(255, 255, 255, 0.22);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.app-nav .btn.is-current {
+  color: var(--nav-current-fg);
+  background-color: var(--nav-current-bg);
+  border-color: var(--nav-current-bg);
+}
+
+.app-nav .btn.is-current:hover {
+  color: var(--nav-current-fg);
+  background-color: var(--nav-current-bg);
+}
+
+@media screen and (max-width: 42em) {
+  .app-nav .btn {
+    display: inline-block;
+    width: auto;
+    padding: 0.55rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .app-nav .btn + .btn {
+    margin-top: 0;
+  }
+}
+
+.main-content {
+  color: var(--text);
+}
+
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.main-content h4,
+.main-content h5,
+.main-content h6 {
+  color: var(--heading);
+}
+
+.main-content a {
+  color: var(--link);
+}
+
+.main-content a:hover {
+  color: var(--link-hover);
+}
+
+.main-content table th,
+.main-content table td {
+  border-color: var(--border);
+}
+
+.main-content table th {
+  background-color: var(--table-head);
+}
+
+.main-content table tr:nth-child(even) {
+  background-color: var(--table-head);
+}
+
+.main-content blockquote {
+  color: var(--text);
+  border-left-color: var(--heading);
+  opacity: 0.88;
+}
+
+.main-content hr {
+  background-color: var(--border);
+}
+
+body.app-pill-pals .main-content,
+body.app-insulin .main-content,
+body.app-walrus .main-content {
+  margin: 1.5rem auto 2.5rem;
+  border-radius: 1.25rem;
+  background-color: var(--surface);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.14);
+}
+
+@media screen and (min-width: 64em) {
+  body.app-pill-pals .main-content,
+  body.app-insulin .main-content,
+  body.app-walrus .main-content {
+    margin: 2rem auto 3rem;
+  }
+}
+
+@media screen and (max-width: 42em) {
+  body.app-pill-pals .main-content,
+  body.app-insulin .main-content,
+  body.app-walrus .main-content {
+    margin: 0.85rem 0.75rem 1.5rem;
+    border-radius: 1rem;
+  }
+}
+
+.site-footer {
+  color: var(--text);
+  opacity: 0.72;
+  border-top-color: var(--border);
+}
+
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+  margin: 1.5rem 0 2.25rem;
+}
+
+.app-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 1.15rem;
+  background: var(--card-body-bg);
+  color: var(--card-body-fg);
+  text-decoration: none !important;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.app-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.16);
+}
+
+.app-card__hero {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 1.1rem 1.2rem;
+  background-image: var(--card-hero);
+  color: var(--card-hero-fg);
+}
+
+.app-card__hero img {
+  width: 56px;
+  height: 56px;
+  border-radius: 22%;
+  flex-shrink: 0;
+}
+
+.app-card__hero h2 {
+  margin: 0;
+  color: var(--card-hero-fg) !important;
+  font-size: 1.2rem;
+}
+
+.app-card p {
+  margin: 0;
+  padding: 1rem 1.2rem 1.2rem;
+}
+
+.app-card--pill-pals {
+  --card-hero: linear-gradient(120deg, #0e335c, #0a4ea3);
+  --card-hero-fg: #fbc725;
+  --card-body-bg: #1c4f85;
+  --card-body-fg: #f1ece6;
+}
+
+.app-card--insulin {
+  --card-hero: linear-gradient(120deg, #0048be, #0090f0);
+  --card-hero-fg: #ffffff;
+  --card-body-bg: #f8f0e0;
+  --card-body-fg: #080040;
+}
+
+.app-card--insulin .app-card__hero {
+  border-bottom: 4px solid #f84890;
+}
+
+.app-card--walrus {
+  --card-hero: linear-gradient(120deg, #4a7a9c, #1484d6);
+  --card-hero-fg: #f6e6d4;
+  --card-body-bg: #f6e6d4;
+  --card-body-fg: #20160c;
+}
+
+.app-card--walrus p {
+  color: #7a5c45;
+}
