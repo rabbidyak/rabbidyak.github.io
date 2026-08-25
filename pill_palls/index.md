@@ -28,6 +28,8 @@ Pill Pals is a tool for education. It is **not** medical advice and must not be 
 
 ## Privacy
 
+The full legal notice is the [Privacy Policy](privacy/). A short summary of how this app uses data is below.
+
 Pill Pals does not create an account with us, show ads, or sell your information.
 
 | Data | What happens |

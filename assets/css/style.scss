@@ -376,3 +376,38 @@ body.app-insulin {
 .app-card--walrus p {
   color: #7a5c45;
 }
+
+.privacy-notice {
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
+.privacy-notice__updated {
+  margin-top: 0;
+  color: var(--text);
+  opacity: 0.78;
+  font-weight: 700;
+}
+
+.privacy-notice h2,
+.privacy-notice h3 {
+  margin-top: 2rem;
+}
+
+.privacy-notice__toc {
+  padding-left: 1.25rem;
+}
+
+.privacy-notice__table-wrap {
+  overflow-x: auto;
+  margin: 1.25rem 0;
+}
+
+.privacy-notice ul {
+  list-style-type: square;
+}
+
+.privacy-notice__credit {
+  margin-top: 2.5rem;
+  opacity: 0.78;
+}

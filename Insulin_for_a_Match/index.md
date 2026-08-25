@@ -29,6 +29,8 @@ Insulin for a Match is a tool for education. It is **not** medical advice and mu
 
 ## Privacy
 
+The full legal notice is the [Privacy Policy](privacy/). A short summary of how this app uses data is below.
+
 Insulin for a Match does not create an account with us, show ads, or sell your information.
 
 | Data | What happens |

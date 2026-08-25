@@ -25,6 +25,8 @@ Email [rabbidyak@gmail.com](mailto:rabbidyak@gmail.com) with the app name **Walr
 
 ## Privacy
 
+The full legal notice is the [Privacy Policy](privacy/). A short summary of how this app uses data is below.
+
 Walrus the Cost? does not create an account with us, show ads, or sell your information. Health, fitness, and expense data are used only to run the app.
 
 | Data | What happens |
