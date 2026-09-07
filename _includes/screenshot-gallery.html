@@ -1,0 +1,10 @@
+{% if page.screenshots %}
+<div class="screenshot-gallery" role="list">
+  {% for shot in page.screenshots %}
+  <figure class="screenshot" role="listitem">
+    <img src="{{ shot.src | relative_url }}" width="{{ shot.width | default: 270 }}" height="{{ shot.height | default: 586 }}" alt="{{ shot.alt }}">
+    <figcaption>{{ shot.caption }}</figcaption>
+  </figure>
+  {% endfor %}
+</div>
+{% endif %}

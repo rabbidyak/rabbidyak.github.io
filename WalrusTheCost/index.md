@@ -3,13 +3,36 @@ layout: default
 title: Walrus the Cost?
 app: walrus
 description: Support and privacy for the Walrus the Cost? iOS tracker
+screenshots:
+  - src: /assets/screenshots/walrus/dashboard.png
+    caption: Dashboard
+    alt: Walrus the Cost dashboard with Apple Health status and a cumulative cardio-minutes chart
+    width: 270
+    height: 584
+  - src: /assets/screenshots/walrus/sessions.png
+    caption: Sessions
+    alt: Sessions list with logged, Apple Health, and CSV workout tags
+    width: 270
+    height: 584
+  - src: /assets/screenshots/walrus/log.png
+    caption: Log
+    alt: Log Workout screen for cycling minutes, distance, calories, and donations
+    width: 270
+    height: 584
+  - src: /assets/screenshots/walrus/expenses.png
+    caption: Expenses
+    alt: Expenses screen with cycling and rowing cost basis, equipment, and subscriptions
+    width: 270
+    height: 584
 ---
 
 {% include app-icon.html %}
 
-Walrus the Cost? is an iOS fitness-cost tracker. It logs ride and row workouts, equipment and subscription expenses, and a cost-per-usage dashboard so you can see what each session costs.
+Walrus the Cost? is a fitness-cost tracker for iPhone, iPad, and Mac. It logs ride and row workouts, tracks equipment and subscriptions, and shows cost-per-usage charts so you can see what each session costs.
 
 This page is the support and privacy page for the App Store listing.
+
+{% include screenshot-gallery.html %}
 
 ## Support
 
@@ -17,11 +40,14 @@ Email [rabbidyak@gmail.com](mailto:rabbidyak@gmail.com) with the app name **Walr
 
 ## What the app does
 
-- Log workouts (ride, row, and other Apple Health workout types you enable)
+- Dashboard with a date range and charts for cardio minutes and other metrics, daily or cumulative
+- Log ride, row, and other Apple Health workout types you enable, including away days and donations
+- Sessions list tagged as Logged, Apple Health, or CSV
 - Track equipment purchases and subscriptions, then divide those costs by usage
 - Import workouts from Apple Health (optional) or from a CSV file
 - Copy workouts, expenses, and settings between your devices with iCloud (optional, not automatic)
 - Encrypt the local workout database on this device when the app goes to the background
+- Appearance, units, vacation dates, and a skip-day message in Settings
 
 ## Privacy
 

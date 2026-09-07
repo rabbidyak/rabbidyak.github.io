@@ -3,13 +3,41 @@ layout: default
 title: Pill Pals
 app: pill-pals
 description: Support and privacy for the Pill Pals iOS study app
+screenshots:
+  - src: /assets/screenshots/pill-pals/home.png
+    caption: Home
+    alt: Pill Pals home screen with Flashcards, Name that Pill, Search Drugs, and Settings
+    width: 270
+    height: 586
+  - src: /assets/screenshots/pill-pals/flashcards.png
+    caption: Flashcards
+    alt: Flashcard for Lipitor with a reason-for-use hint and Show answer button
+    width: 270
+    height: 586
+  - src: /assets/screenshots/pill-pals/quiz.png
+    caption: Name that Pill!
+    alt: Name that Pill quiz showing a correct Atorvastatin answer and confetti
+    width: 270
+    height: 586
+  - src: /assets/screenshots/pill-pals/search.png
+    caption: Search
+    alt: Search list of medications sorted by ClinCalc rank
+    width: 270
+    height: 586
+  - src: /assets/screenshots/pill-pals/drug-detail.png
+    caption: Drug facts
+    alt: Lipitor facts page with brand, generic, common use, and ranking data
+    width: 270
+    height: 586
 ---
 
 {% include app-icon.html %}
 
-Pill Pals is an iOS study app for common U.S. outpatient medications. It uses flashcards, search, and a Name that Pill quiz so you can practice brand and generic names.
+Pill Pals is an iOS study app for common U.S. outpatient medications. From the home screen you can open flashcards, play Name that Pill!, search the deck, or change settings.
 
 This page is the support and privacy page for the App Store listing.
+
+{% include screenshot-gallery.html %}
 
 ## Support
 
@@ -17,9 +45,11 @@ Email [rabbidyak@gmail.com](mailto:rabbidyak@gmail.com) with the app name **Pill
 
 ## What the app does
 
-- Flashcards and search over a ranked list of widely used medications
-- Name that Pill, a timed multiple-choice quiz
-- Optional Game Center friend ranks for lifetime correct answers (off by default)
+- Home screen to jump into Flashcards, Name that Pill!, Search Drugs, or Settings
+- Flashcards that flip a brand name to the generic, with an optional reason-for-use hint
+- Name that Pill!, a timed multiple-choice quiz with streak confetti and a pause every 10 answers
+- Search by brand or generic, sortable by rank, with a facts page for each medication
+- Settings for deck size, text zoom, OpenDyslexic, quiz timer, and data-source refresh
 - Rankings from ClinCalc / AHRQ MEPS; extra brand and generic names from U.S. FDA openFDA
 
 ## Important disclaimer
@@ -36,10 +66,7 @@ Pill Pals does not create an account with us, show ads, or sell your information
 | --- | --- |
 | Settings (font, zoom, quiz options, educational-use checkbox) | Stored on your device |
 | Quiz score | Stored on your device |
-| Game Center rank sharing | Optional. If you turn it on, Apple Game Center receives your lifetime correct-answer count so friends you choose can see it |
 | Medication list refresh | The app may download ranking and name data from ClinCalc and openFDA over HTTPS. Those requests are not used to identify you |
-
-You can use the app without Game Center. Turning rank sharing off keeps scores on this device.
 
 We do not collect analytics, crash reports, or advertising IDs.
 
