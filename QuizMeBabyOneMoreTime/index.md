@@ -3,33 +3,36 @@ layout: default
 title: Quiz Me Baby One More Time
 app: quiz-me
 description: Support and privacy for the Quiz Me Baby One More Time iOS trivia app
+redirect_from:
+  - /quizmebabyonemoretime/
+  - /quiz_me_baby_one_more_time/
 screenshots:
-  - src: /assets/screenshots/quiz-me/home.png
+  - src: /assets/screenshots/quiz-me/01-home.png
     caption: Home
-    alt: Quiz setup with category exclusions, difficulty, question type, and a Hit me button
+    alt: Dark-mode quiz setup with category exclusions, difficulty, question type, and a Hit me button
     width: 270
     height: 586
-  - src: /assets/screenshots/quiz-me/categories.png
+  - src: /assets/screenshots/quiz-me/02-categories.png
     caption: Categories
     alt: Category list with Film turned off and one category excluded
     width: 270
     height: 586
-  - src: /assets/screenshots/quiz-me/quiz.png
+  - src: /assets/screenshots/quiz-me/03-quiz.png
     caption: Quiz
     alt: Multiple-choice question about Baby One More Time with four year options
     width: 270
     height: 586
-  - src: /assets/screenshots/quiz-me/quiz-answered.png
+  - src: /assets/screenshots/quiz-me/04-quiz-answered.png
     caption: Answer
     alt: Correct 1998 answer highlighted after a music trivia question
     width: 270
     height: 586
-  - src: /assets/screenshots/quiz-me/results.png
+  - src: /assets/screenshots/quiz-me/05-results.png
     caption: Results
     alt: Perfect 5 of 5 score with Peak quokka and Quiz me baby one more time
     width: 270
     height: 586
-  - src: /assets/screenshots/quiz-me/settings.png
+  - src: /assets/screenshots/quiz-me/06-settings.png
     caption: Settings
     alt: Settings for live or downloaded questions, appearance, and OpenDyslexic
     width: 270

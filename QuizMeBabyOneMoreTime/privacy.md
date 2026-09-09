@@ -3,6 +3,8 @@ layout: default
 title: Privacy Policy
 app: quiz-me
 description: Privacy notice for the Quiz Me Baby One More Time iOS trivia app
+redirect_from:
+  - /quizmebabyonemoretime/privacy/
 ---
 
 {% include app-icon.html %}
