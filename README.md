@@ -10,5 +10,6 @@ Published at **https://rabbidyak.github.io/**
 | Pill Pals | https://rabbidyak.github.io/pill_palls/ | https://rabbidyak.github.io/pill_palls/privacy/ |
 | Insulin for a Match | https://rabbidyak.github.io/Insulin_for_a_Match/ | https://rabbidyak.github.io/Insulin_for_a_Match/privacy/ |
 | Walrus the Cost? | https://rabbidyak.github.io/WalrusTheCost/ | https://rabbidyak.github.io/WalrusTheCost/privacy/ |
+| Quiz Me Baby One More Time | https://rabbidyak.github.io/QuizMeBabyOneMoreTime/ | https://rabbidyak.github.io/QuizMeBabyOneMoreTime/privacy/ |
 
 Support email: rabbidyak@gmail.com

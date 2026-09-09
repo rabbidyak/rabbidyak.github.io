@@ -67,6 +67,22 @@
   --table-head: rgba(180, 123, 77, 0.22);
 }
 
+.app-quiz-me {
+  --header-from: #006dae;
+  --header-to: #5ba4e5;
+  --header-fg: #fdf5e6;
+  --page-bg: #9ed1f6;
+  --text: #2b1d16;
+  --heading: #053861;
+  --link: #006dae;
+  --link-hover: #a67c52;
+  --surface: #fdf5e6;
+  --border: rgba(43, 29, 22, 0.12);
+  --nav-current-bg: #ffc107;
+  --nav-current-fg: #2b1d16;
+  --table-head: rgba(255, 193, 7, 0.22);
+}
+
 body {
   background-color: var(--page-bg);
   color: var(--text);
@@ -110,6 +126,10 @@ body.app-insulin {
   color: #f6e6d4;
 }
 
+.app-quiz-me .project-name {
+  color: #ffc107;
+}
+
 .page-header a {
   color: inherit;
 }
@@ -135,6 +155,10 @@ body.app-insulin {
   box-shadow: 0 0 0 3px #f6e6d4, 0 10px 28px rgba(0, 0, 0, 0.28);
 }
 
+.app-quiz-me .brand-icon {
+  box-shadow: 0 0 0 3px #ffc107, 0 10px 28px rgba(0, 0, 0, 0.28);
+}
+
 .brand-icon--inline {
   display: block;
   margin: 0 auto 1.5rem;
@@ -146,6 +170,7 @@ body.app-insulin {
 
 .hub-icons {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 0.7rem;
   margin: 0 auto 1.15rem;
@@ -256,7 +281,8 @@ body.app-insulin {
 
 .app-pill-pals .main-content,
 .app-insulin .main-content,
-.app-walrus .main-content {
+.app-walrus .main-content,
+.app-quiz-me .main-content {
   margin: 1.5rem auto 2.5rem;
   border-radius: 1.25rem;
   background-color: var(--surface);
@@ -266,7 +292,8 @@ body.app-insulin {
 @media screen and (min-width: 64em) {
   .app-pill-pals .main-content,
   .app-insulin .main-content,
-  .app-walrus .main-content {
+  .app-walrus .main-content,
+  .app-quiz-me .main-content {
     margin: 2rem auto 3rem;
   }
 }
@@ -274,7 +301,8 @@ body.app-insulin {
 @media screen and (max-width: 42em) {
   .app-pill-pals .main-content,
   .app-insulin .main-content,
-  .app-walrus .main-content {
+  .app-walrus .main-content,
+  .app-quiz-me .main-content {
     margin: 0.85rem 0.75rem 1.5rem;
     border-radius: 1rem;
   }
@@ -377,6 +405,17 @@ body.app-insulin {
   color: #7a5c45;
 }
 
+.app-card--quiz-me {
+  --card-hero: linear-gradient(120deg, #006dae, #5ba4e5);
+  --card-hero-fg: #fdf5e6;
+  --card-body-bg: #fdf5e6;
+  --card-body-fg: #2b1d16;
+}
+
+.app-card--quiz-me h2 {
+  color: #ffc107 !important;
+}
+
 .screenshot-gallery {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -407,8 +446,16 @@ body.app-insulin {
   box-shadow: 0 0 0 2px #fbc725, 0 10px 24px rgba(0, 0, 0, 0.28);
 }
 
+.app-insulin .screenshot img {
+  box-shadow: 0 0 0 2px #f84890, 0 10px 24px rgba(0, 0, 0, 0.28);
+}
+
 .app-walrus .screenshot img {
   box-shadow: 0 0 0 2px #f6e6d4, 0 10px 24px rgba(0, 0, 0, 0.22);
+}
+
+.app-quiz-me .screenshot img {
+  box-shadow: 0 0 0 2px #ffc107, 0 10px 24px rgba(0, 0, 0, 0.22);
 }
 
 .screenshot figcaption {

@@ -3,6 +3,37 @@ layout: default
 title: Insulin for a Match
 app: insulin
 description: Support and privacy for the Insulin for a Match iOS game
+screenshots:
+  - src: /assets/screenshots/insulin/home.png
+    caption: Home
+    alt: Insulin for a Match home screen with a Play button and insulin vial artwork
+    width: 270
+    height: 586
+  - src: /assets/screenshots/insulin/game.png
+    caption: Match
+    alt: Matching board with Humalog selected in column A and brand or generic cards in both columns
+    width: 270
+    height: 586
+  - src: /assets/screenshots/insulin/hint.png
+    caption: Hint
+    alt: Hint highlighting possible matches after Humalog is selected
+    width: 270
+    height: 586
+  - src: /assets/screenshots/insulin/complete.png
+    caption: Round complete
+    alt: Round complete dialog after matching every pair, with Deal another round
+    width: 270
+    height: 586
+  - src: /assets/screenshots/insulin/settings.png
+    caption: Settings
+    alt: Settings for appearance, cards per round, brand and generic labels, and openFDA
+    width: 270
+    height: 586
+  - src: /assets/screenshots/insulin/fda.png
+    caption: FDA info
+    alt: FDA information sheet for Humalog with brand, generic, NDC, and acting speed
+    width: 270
+    height: 586
 ---
 
 {% include app-icon.html %}
@@ -10,6 +41,8 @@ description: Support and privacy for the Insulin for a Match iOS game
 Insulin for a Match is an iOS matching game that helps you practice insulin brand names and their generic counterparts. Cards are dealt in two columns. You match a brand to a generic, and you can filter by fast, slow, or mixed action.
 
 This page is the support and privacy page for the App Store listing.
+
+{% include screenshot-gallery.html %}
 
 ## Support
 
