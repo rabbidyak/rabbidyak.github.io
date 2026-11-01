@@ -11,5 +11,6 @@ Published at **https://rabbidyak.github.io/**
 | Insulin for a Match | https://rabbidyak.github.io/Insulin_for_a_Match/ | https://rabbidyak.github.io/Insulin_for_a_Match/privacy/ |
 | Walrus the Cost? | https://rabbidyak.github.io/WalrusTheCost/ | https://rabbidyak.github.io/WalrusTheCost/privacy/ |
 | Quiz Me Baby One More Time | https://rabbidyak.github.io/QuizMeBabyOneMoreTime/ | https://rabbidyak.github.io/QuizMeBabyOneMoreTime/privacy/ |
+| Fini's Flight Fox | https://rabbidyak.github.io/FlightFox/ | https://rabbidyak.github.io/FlightFox/privacy/ |
 
 Support email: rabbidyak@gmail.com
